@@ -95,3 +95,78 @@ html {
     height: 8px;
     background-image: url('/assets/icons/down-arrow.svg');
 }
+
+
+
+.graph-container {
+    padding-top: 60px; /*uso padding en el contendor principal por el background*/
+
+    height: 100%;
+    min-width: 320px;
+    background-color: var(--off-white);
+}
+
+.graph-image {
+    width: 195px;
+    height: 195px;
+
+    margin: 0 auto;
+    margin-bottom: 40px; /*si agrego margin top el background no aplica*/
+
+    background-image: url('/assets/img/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.graph-container-info h2 {
+    min-width: 288px;
+
+    margin-bottom: 24px;
+
+    text-align: center;
+    line-height: 2.6rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.graph-container-info p {
+    min-width: 288px;
+
+    text-align: center;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    color: #757575;
+}
+
+
+
+.table-container {
+    min-width: 200px;
+    width: 70%;
+    /*max-width: ;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.table-structure {
+    width: 100%;
+}
+
+
+.table-structure td {
+    width: 50%;
+    margin: 2px;
+    background-color: var(--just-white);
+}
+
+.table-right {
+    text-align: center;
+}
+
