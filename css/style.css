@@ -1,3 +1,5 @@
+
+/*GENERAL*/
 :root {
     --bitcoin-orange: #F7931A;
     --soft-orange: #FFE9D5;
@@ -20,6 +22,8 @@ html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
+
+/*HEADER*/
 
 .header-container {
     position: relative;
@@ -96,11 +100,11 @@ html {
     background-image: url('/assets/icons/down-arrow.svg');
 }
 
-
+/*SECTION 1*/
 
 .graph-container {
     padding-top: 60px; /*uso padding en el contendor principal por el background*/
-
+    margin-bottom: 60px;
     height: 100%;
     min-width: 320px;
     background-color: var(--off-white);
@@ -131,7 +135,7 @@ html {
     font-weight: 700;
 }
 
-.graph-container-info p {
+.graph-container-info-p {
     min-width: 288px;
 
     text-align: center;
@@ -145,14 +149,31 @@ html {
 
 
 .table-container {
-    min-width: 200px;
+    min-width: 280px;
     width: 70%;
-    /*max-width: ;*/
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.table-title {
+    margin-top: 46px;
+    margin-bottom: 12px;
+    margin-left: 28px; /*ver margenes 12 + 12 + 4*/
+    width: 100%;
+}
+
+.table-title h3 {
+    text-align: start;
+
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--bitcoin-orange);
 }
 
 .table-structure {
@@ -163,10 +184,155 @@ html {
 .table-structure td {
     width: 50%;
     margin: 2px;
+    padding: 12px;
+
     background-color: var(--just-white);
+}
+
+.table-arrow-down { /*para mostrar el icono, display mas su dimension*/
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 12px;
+
+    background-image: url('/assets/icons/trending-down.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.table-arrow-up { /*para mostrar el icono, display mas su dimension*/
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 12px;
+    
+    background-image: url('/assets/icons/trending-up.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .table-right {
     text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+
+    color: #757575;
 }
 
+.table-left {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+
+    color: #B5B0AC;
+}
+
+.table-left-border-top {
+    border-radius: 4px 0 0 0;
+}
+
+.table-right-border-top {
+    border-radius: 0 4px 0 0;
+}
+
+.table-left-border-botton {
+    border-radius: 0 0 0 4px;
+}
+
+.table-right-border-botton { 
+    border-radius: 0 0 4px 0;
+}
+
+.table-update {
+    min-width: 280px;
+    max-width: 500px;
+    padding: 8px;
+    margin-top: 16px;
+
+    text-align: center;
+
+    background: var(--soft-orange);
+    border-radius: 8px;
+}
+
+.table-update h3 {
+    display: inline-block;
+    font-weight: 700;
+
+    font-size: 1.2rem;
+
+    color: var(--war-black-p);
+}
+
+.table-update p {
+    display: inline-block;
+    font-weight: 500;
+
+    font-size: 1.2rem;
+
+    color: var(--war-black-p);
+}
+
+
+/*table blue*/
+
+.table-title-blue {
+    margin-top: 46px;
+    margin-bottom: 12px;
+    margin-left: 28px; /*ver margenes 12 + 12 + 4*/
+    width: 100%;
+}
+
+.table-title-blue h3 {
+    text-align: start;
+
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--secundary-blue);
+}
+
+.table-update-blue {
+    min-width: 280px;
+    max-width: 500px;
+    padding: 8px;
+    margin-top: 16px;
+
+    text-align: center;
+
+    background: var(--soft-blue);
+    border-radius: 8px;
+}
+
+.table-update-blue h3 {
+    display: inline-block;
+    font-weight: 700;
+
+    font-size: 1.2rem;
+
+    color: var(--war-black-p);
+}
+
+.table-update-blue p {
+    display: inline-block;
+    font-weight: 500;
+
+    font-size: 1.2rem;
+
+    color: var(--war-black-p);
+}
+
+/*table slider*/
+
+.table-slider {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.table-slider::-webkit-scrollbar {
+    display: none;
+}
