@@ -1,3 +1,9 @@
 .table-slider {
     justify-content: center;
 }
+
+.card-general-container {
+    flex-direction: row;
+    align-items: center;
+    width: 850px;
+}

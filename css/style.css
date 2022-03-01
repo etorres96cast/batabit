@@ -104,7 +104,7 @@ html {
 
 .graph-container {
     padding-top: 60px; /*uso padding en el contendor principal por el background*/
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     height: 100%;
     min-width: 320px;
     background-color: var(--off-white);
@@ -126,7 +126,8 @@ html {
 
 .graph-container-info h2 {
     min-width: 288px;
-
+    width: 70%;
+    margin: 0 auto;
     margin-bottom: 24px;
 
     text-align: center;
@@ -137,7 +138,8 @@ html {
 
 .graph-container-info-p {
     min-width: 288px;
-
+    width: 70%;
+    margin: 0 auto;
     text-align: center;
     line-height: 1.8rem;
     font-size: 1.4rem;
@@ -296,6 +298,7 @@ html {
 
 .table-update-blue {
     min-width: 280px;
+    width: 70%;
     max-width: 500px;
     padding: 8px;
     margin-top: 16px;
@@ -335,4 +338,98 @@ html {
 
 .table-slider::-webkit-scrollbar {
     display: none;
+}
+
+.info-general-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--warm-black);
+}
+
+.ico-sectionGraph-sectionInfo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+
+    bottom: calc(100% - 25px/2);
+
+    background-image: url('/assets/icons/batata.svg');
+}
+
+.info-card-conatainer {
+    padding-top: 60px;
+    min-width: 288px;
+    width: 70%;
+    
+}
+
+.info-title {
+    margin-bottom: 24px;
+
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    text-align: center;
+
+    color: var(--just-white);
+}
+
+.info-context {
+    margin-bottom: 32px;
+
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+
+    color: #808080;
+}
+
+.card-general-container {
+    display: flex;
+    flex-wrap: wrap;
+    /*width: 1200px;*/
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    margin-bottom: 60px;
+}
+
+.card-container {
+    min-width: 288px;
+    width: 70%;
+    max-width: 400px;
+    padding: 12px;
+    height: 100%;
+    margin: 0 12px 16px;
+    background-color: var(--war-black-p);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+}
+
+.card-ico {
+    margin-left: 16px;
+    margin-bottom: 12px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url('/assets/icons/clock.svg');
+}
+.card-title {
+    margin-left: 16px;
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    color: var(--just-white);
+}
+
+.card-info {
+    margin-left: 16px;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
 }
